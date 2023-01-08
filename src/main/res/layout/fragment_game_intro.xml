@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/constraintbackgraund"
+    tools:context=".GameIntroFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="411dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IntroUpdate">
+
+        <TextView
+            android:id="@+id/IntroTextViewGaming"
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            android:text="Oyuncu Sayısı:"
+
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/IntroCheckBoxOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+
+                android:text="Tek Oyunculu"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="29dp"
+                android:layout_weight="0" />
+
+            <RadioButton
+                android:id="@+id/IntroCheckBoxMultiple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0"
+                android:text="Çok Oyunculu"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="411dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/IntroTextViewDifficultyLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Zorluk Seviyesi:"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="29dp"
+                android:layout_weight="0" />
+
+            <RadioButton
+                android:id="@+id/IntroCheckBox2x2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:text="2x2"
+
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="29dp"
+                android:layout_weight="0" />
+
+            <RadioButton
+                android:id="@+id/IntroCheckBox4x4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:text="4x4"
+
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="29dp"
+                android:layout_weight="0" />
+
+            <RadioButton
+                android:id="@+id/IntroCheckBox6x6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:text="6x6"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/IntroTextViewEposta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="16dp"
+        android:text="E-posta Adresiniz: "
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/IntroEnter"
+        android:layout_width="122dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonbackground"
+        android:backgroundTint="@color/buttonColor"
+        android:text="başla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <Button
+        android:id="@+id/IntroQuit"
+        android:layout_width="122dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonbackground"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Çıkış Yap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IntroEnter" />
+
+    <Button
+        android:id="@+id/IntroUpdate"
+        android:layout_width="142dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonbackground"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Bilgilerimi Güncelle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IntroTextViewEposta" />
+</androidx.constraintlayout.widget.ConstraintLayout>

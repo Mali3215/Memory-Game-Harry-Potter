@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/indirr"
+    tools:context=".MemberAddFragment">
+
+    <TextView
+        android:id="@+id/AddTextViewNewUsers"
+        android:layout_width="297dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="16dp"
+        android:text="YENİ ÜYELİK"
+        android:textColor="@color/textColor"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/AddEditTextEmailAdress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/AddEditTextPassword"
+        android:layout_width="403dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:hint="Şifrenizi Giriniz"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddEditTextEmailAdress" />
+
+    <EditText
+        android:id="@+id/AddEditTextEmailAdress"
+        android:layout_width="403dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:hint="E-posta Adresinizi Giriniz"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddTextViewNewUsers" />
+
+    <Button
+        android:id="@+id/AddButtonNewUser"
+        android:layout_width="153dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonbackground"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Kayıt Ol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/AddButtonEnter"
+        app:layout_constraintTop_toBottomOf="@+id/AddEditTextPassword" />
+
+    <Button
+        android:id="@+id/AddButtonEnter"
+        android:layout_width="153dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonbackground"
+        android:backgroundTint="@color/buttonColor"
+        android:text="GİRİŞ YAP"
+        app:layout_constraintEnd_toStartOf="@+id/AddButtonNewUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddEditTextPassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

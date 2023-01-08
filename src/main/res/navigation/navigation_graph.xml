@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/profileFragment">
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.yazlab.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_gameIntroFragment"
+            app:destination="@id/gameIntroFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_memberAddFragment"
+            app:destination="@id/memberAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/memberAddFragment"
+        android:name="com.example.yazlab.MemberAddFragment"
+        android:label="fragment_member_add"
+        tools:layout="@layout/fragment_member_add" >
+        <action
+            android:id="@+id/action_memberAddFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameIntroFragment"
+        android:name="com.example.yazlab.GameIntroFragment"
+        android:label="fragment_game_intro"
+        tools:layout="@layout/fragment_game_intro" >
+        <action
+            android:id="@+id/action_gameIntroFragment_to_updateUserFragment2"
+            app:destination="@id/updateUserFragment" />
+        <action
+            android:id="@+id/action_gameIntroFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_gameIntroFragment_to_multiple2x2Fragment"
+            app:destination="@id/multiple2x2Fragment" />
+        <action
+            android:id="@+id/action_gameIntroFragment_to_multiple4x4Fragment"
+            app:destination="@id/multiple4x4Fragment" />
+        <action
+            android:id="@+id/action_gameIntroFragment_to_multiple6x6Fragment"
+            app:destination="@id/multiple6x6Fragment" />
+        <action
+            android:id="@+id/action_gameIntroFragment_to_only2x2Fragment"
+            app:destination="@id/only2x2Fragment" />
+        <action
+            android:id="@+id/action_gameIntroFragment_to_only4x4Fragment"
+            app:destination="@id/only4x4Fragment" />
+        <action
+            android:id="@+id/action_gameIntroFragment_to_only6x6Fragment"
+            app:destination="@id/only6x6Fragment" />
+        <action
+            android:id="@+id/action_gameIntroFragment_to_updateUserFragment"
+            app:destination="@id/updateUserFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/updateUserFragment"
+        android:name="com.example.yazlab.UpdateUserFragment"
+        android:label="fragment_update_user"
+        tools:layout="@layout/fragment_update_user" >
+
+        <action
+            android:id="@+id/action_updateUserFragment2_to_gameIntroFragment"
+            app:destination="@id/gameIntroFragment" />
+        <action
+            android:id="@+id/action_updateUserFragment2_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/multiple2x2Fragment"
+        android:name="com.example.yazlab.Multiple2x2Fragment"
+        android:label="fragment_multiple2x2"
+        tools:layout="@layout/fragment_multiple2x2" >
+        <action
+            android:id="@+id/action_multiple2x2Fragment_to_gameIntroFragment"
+            app:destination="@id/gameIntroFragment" />
+        <action
+            android:id="@+id/action_multiple2x2Fragment_self"
+            app:destination="@id/multiple2x2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/multiple4x4Fragment"
+        android:name="com.example.yazlab.Multiple4x4Fragment"
+        android:label="fragment_multiple4x4"
+        tools:layout="@layout/fragment_multiple4x4" >
+        <action
+            android:id="@+id/action_multiple4x4Fragment_to_gameIntroFragment"
+            app:destination="@id/gameIntroFragment" />
+        <action
+            android:id="@+id/action_multiple4x4Fragment_self"
+            app:destination="@id/multiple4x4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/multiple6x6Fragment"
+        android:name="com.example.yazlab.Multiple6x6Fragment"
+        android:label="fragment_multiple6x6"
+        tools:layout="@layout/fragment_multiple6x6" >
+        <action
+            android:id="@+id/action_multiple6x6Fragment_to_gameIntroFragment"
+            app:destination="@id/gameIntroFragment" />
+        <action
+            android:id="@+id/action_multiple6x6Fragment_self"
+            app:destination="@id/multiple6x6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/only2x2Fragment"
+        android:name="com.example.yazlab.Only2x2Fragment"
+        android:label="fragment_only2x2"
+        tools:layout="@layout/fragment_only2x2" >
+        <action
+            android:id="@+id/action_only2x2Fragment_to_gameIntroFragment"
+            app:destination="@id/gameIntroFragment" />
+        <action
+            android:id="@+id/action_only2x2Fragment_self"
+            app:destination="@id/only2x2Fragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/only4x4Fragment"
+        android:name="com.example.yazlab.Only4x4Fragment"
+        android:label="fragment_only4x4"
+        tools:layout="@layout/fragment_only4x4" >
+        <action
+            android:id="@+id/action_only4x4Fragment_to_gameIntroFragment"
+            app:destination="@id/gameIntroFragment" />
+        <action
+            android:id="@+id/action_only4x4Fragment_self"
+            app:destination="@id/only4x4Fragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/only6x6Fragment"
+        android:name="com.example.yazlab.Only6x6Fragment"
+        android:label="fragment_only6x6"
+        tools:layout="@layout/fragment_only6x6" >
+        <action
+            android:id="@+id/action_only6x6Fragment_to_gameIntroFragment"
+            app:destination="@id/gameIntroFragment" />
+        <action
+            android:id="@+id/action_only6x6Fragment_self"
+            app:destination="@id/only6x6Fragment" />
+    </fragment>
+</navigation>

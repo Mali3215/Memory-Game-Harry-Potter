@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/constraintbackgraund"
+    tools:context=".Multiple6x6Fragment">
+
+    <ImageView
+        android:id="@+id/multiple6x6TextViewPlay"
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/play"
+        app:layout_constraintEnd_toStartOf="@+id/multiple6x6ImageViewSound"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/multiple6x6ImageViewSound"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/sound"
+        app:layout_constraintEnd_toStartOf="@+id/multiple6x6TextViewPause"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/multiple6x6TextViewPause"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/multiple6x6TextViewRemainingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="75dp"
+        android:text="Kalan Süre: "
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/multiple6x6TextViewPlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="366dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout3">
+
+        <TextView
+            android:id="@+id/multiple6x6TextViewSkorGaming1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Oyuncunun Puanını: 0.0"
+            android:textColor="@color/buttonColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/multiple6x6TextViewSkorGaming2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Oyuncunun Puanını: 0.0"
+            android:textColor="@color/buttonColor"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="407dp"
+        android:layout_height="443dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiple6x6TextViewRemainingTime">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage1"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage2"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage3"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage4"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage5"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage6"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage7"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage8"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage9"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage10"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage11"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage12"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage13"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage14"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage15"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage16"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage17"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage18"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage19"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage20"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage21"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage22"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage23"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage24"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage25"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage26"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage27"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage28"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage29"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage30"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="400dp"
+            android:layout_height="57dp">
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage31"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage32"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage33"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage34"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage35"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/multiple6x6ImageViewImage36"
+                android:layout_width="68dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black" />
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

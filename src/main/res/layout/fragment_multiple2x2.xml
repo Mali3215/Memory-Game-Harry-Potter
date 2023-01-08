@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/constraintbackgraund"
+    tools:context=".Multiple2x2Fragment">
+
+    <TextView
+        android:id="@+id/multiple2x2TextViewRemainingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="75dp"
+        android:text="Kalan Süre: "
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/multiple2x2TextViewPlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/multiple2x2TextViewPlay"
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/play"
+        app:layout_constraintEnd_toStartOf="@+id/multiple2x2ImageViewSound"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/multiple2x2ImageViewSound"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/sound"
+        app:layout_constraintEnd_toStartOf="@+id/multiple2x2TextViewPause"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/multiple2x2TextViewPause"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="364dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+        <TextView
+            android:id="@+id/multiple2x2TextViewSkorGaming1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Oyuncunun Puanını:0.0"
+            android:textColor="@color/buttonColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/multiple2x2TextViewSkorGaming2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Oyuncunun Puanını:0.0"
+            android:textColor="@color/buttonColor"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="411dp"
+        android:layout_height="391dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiple2x2TextViewRemainingTime">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="25dp"
+                    android:layout_height="29dp"
+                    android:layout_weight="0" />
+
+                <ImageButton
+                    android:id="@+id/multiple2x2ImageViewImage1"
+                    android:layout_width="174dp"
+                    android:layout_height="194dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/black" />
+
+                <Space
+                    android:layout_width="15dp"
+                    android:layout_height="29dp"
+                    android:layout_weight="0" />
+
+                <ImageButton
+                    android:id="@+id/multiple2x2ImageViewImage2"
+                    android:layout_width="174dp"
+                    android:layout_height="194dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/black" />
+
+                <Space
+                    android:layout_width="25dp"
+                    android:layout_height="29dp"
+                    android:layout_weight="0" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="25dp"
+                    android:layout_height="29dp"
+                    android:layout_weight="0" />
+
+                <ImageButton
+                    android:id="@+id/multiple2x2ImageViewImage3"
+                    android:layout_width="174dp"
+                    android:layout_height="194dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/black" />
+
+                <Space
+                    android:layout_width="15dp"
+                    android:layout_height="29dp"
+                    android:layout_weight="0" />
+
+                <ImageButton
+                    android:id="@+id/multiple2x2ImageViewImage4"
+                    android:layout_width="174dp"
+                    android:layout_height="194dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/black" />
+
+                <Space
+                    android:layout_width="15dp"
+                    android:layout_height="29dp"
+                    android:layout_weight="0" />
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

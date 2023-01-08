@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/constraintbackgraund"
+    tools:context=".Only4x4Fragment">
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="411dp"
+        android:layout_height="475dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/only4x4TextViewSkor"
+        tools:ignore="MissingConstraints">
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="29dp"
+            android:layout_weight="0" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+
+                app:srcCompat="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage2"
+                android:layout_width="98dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+        </TableRow>
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_weight="0" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage5"
+                android:layout_width="104dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage6"
+                android:layout_width="98dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+        </TableRow>
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_weight="0" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage9"
+                android:layout_width="104dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage10"
+                android:layout_width="98dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage12"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+        </TableRow>
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_weight="0" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage13"
+                android:layout_width="104dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage14"
+                android:layout_width="98dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage15"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+
+            <ImageButton
+                android:id="@+id/only4x4ImageViewImage16"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/black" />
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView
+        android:id="@+id/only4x4TextViewSkor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Puanınız:"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/only4x4TextViewRemainingTime"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/only4x4TextViewRemainingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="110dp"
+        android:text="Kalan Süre: "
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/only4x4TextViewPlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/only4x4TextViewPause"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/only4x4TextViewPlay"
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/play"
+        app:layout_constraintEnd_toStartOf="@+id/only4x4ImageViewSound"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/only4x4ImageViewSound"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/sound"
+        app:layout_constraintEnd_toStartOf="@+id/only4x4TextViewPause"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
